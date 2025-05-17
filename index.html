@@ -2,46 +2,69 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Привет, я Саша</title>
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-  <!-- === Шапка / навигация === -->
+  <!-- Шапка с навигацией -->
   <header class="site-header">
     <nav class="site-nav">
-      <a href="#" class="nav-link active">Главная</a>
-      <!-- Если появятся другие разделы, просто дублируй <a> -->
+      <a href="#home"      class="nav-link active">Главная</a>
+      <a href="#about"     class="nav-link">Обо мне</a>
+      <a href="#portfolio" class="nav-link">Портфолио</a>
+      <a href="#contacts"  class="nav-link">Контакты</a>
     </nav>
   </header>
 
-  <!-- === Основной контент === -->
+  <!-- Основной контент -->
   <main class="content">
+    <!-- 1. Интро-блок -->
     <section class="intro">
       <h1 class="intro__title">Привет, я Саша</h1>
-
       <p class="intro__text">
-        Я начинающий продуктовый дизайнер с опытом в визуальных
-        коммуникациях более 7 лет. Прошел курс Яндекс.Практикума
-        по продуктовому подходу, работал с гипотезами,
+        Я начинающий продуктовый дизайнер с опытом в визуальных коммуникациях более 7 лет. 
+        Прошел курс Яндекс.Практикума по продуктовому подходу, работал с гипотезами, 
         пользовательскими сценариями, интерфейсами в Figma.
       </p>
-
       <p class="intro__text">
-        Умею выстраивать дизайн, опираясь на цели продукта и
-        метрики. Имею опыт кросс-функционального взаимодействия
-        и самостоятельной реализации фичей от исследований и
-        построения гипотез до финального макета.
+        Умею выстраивать дизайн, опираясь на цели продукта и метрики. Имею опыт 
+        кросс-функционального взаимодействия и самостоятельной реализации фичей 
+        от исследований и построения гипотез до финального макета.
       </p>
-
       <p class="intro__text">
         А еще я просто люблю делать классные кнопки.
       </p>
+    </section>
+
+    <!-- 2. Секция карточек -->
+    <section class="cards">
+      <div class="card">
+        <div class="card__media">
+          <img src="images/card-1.jpg" alt="ПУ для ДИЗАРМ" />
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Проект 1</h3>
+          <p class="card__subtitle">Краткое описание проекта</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__media">
+          <img src="images/card-2.jpg" alt="Проект 2" />
+        </div>
+        <div class="card__body">
+          <h3 class="card__title"> Проект 2</h3>
+          <p class="card__subtitle">Краткое описание проекта</p>
+        </div>
+      </div>
+      <!-- Добавляй новые карточки по шаблону -->
     </section>
   </main>
 
